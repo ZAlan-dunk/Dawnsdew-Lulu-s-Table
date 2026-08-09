@@ -27,8 +27,8 @@
 
 - Changes: Copied the source recipe app into this repository and changed only the repository identity, installed/in-app display name, artifact prefix, prototype title, and source User-Agent label.
 - Decisions and new preferences: Keep the package ID, namespace, local data keys, recipe catalog, navigation, theme behavior, and feature surfaces aligned with the source app. Use an independent release signature for this named copy; do not treat its APK as a cover-install upgrade for the source app.
-- Verification: Source copy started from the latest `main` commit before the rename pass; source files remain otherwise unchanged pending the release build.
-- Commit, tag, and Release: Pending.
+- Verification: GitHub Actions run `31322516706` passed catalog validation, 36 unit tests, Debug/Release Lint, Debug/Release assembly, and independent release signing. The release APK SHA-256 is `1365d11feab1f883f0d77124652a1184d2bb22f9b26412c0681ba9b86b386ff3`; the remote Release asset matched this hash and no debug asset was published.
+- Commit, tag, and Release: Source commit `674ee96` is pushed to `main`; tag `v0.6.5-Bata` and the GitHub Pre-release are published with `Dawnsdew-Lulu-s-Table-v0.6.5-Bata-release.apk` and `SHA256.txt`.
 
 ### 2026-08-09 v0.6.5-Bata
 
