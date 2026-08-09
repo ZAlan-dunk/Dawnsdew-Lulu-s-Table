@@ -90,7 +90,7 @@ public final class RemoteImageLoader implements AutoCloseable {
             connection.setReadTimeout(12000);
             connection.setInstanceFollowRedirects(false);
             connection.setRequestProperty("Accept", "image/*");
-            connection.setRequestProperty("User-Agent", "DawnsTingTingsTable Android");
+            connection.setRequestProperty("User-Agent", "DawnsdewLulusTable Android");
             if (connection.getResponseCode() != HttpURLConnection.HTTP_OK) return null;
             String contentType = connection.getContentType();
             if (contentType == null || !contentType.toLowerCase(java.util.Locale.ROOT).startsWith("image/")) {

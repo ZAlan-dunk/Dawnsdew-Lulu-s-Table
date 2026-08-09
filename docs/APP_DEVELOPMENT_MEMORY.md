@@ -2,11 +2,11 @@
 
 ## Stable Identity
 
-- Repository: `ZAlan-dunk/DawnsTing-Tings-Table`
+- Repository: `ZAlan-dunk/Dawnsdew-Lulu-s-Table`
 - Package ID and namespace: `com.dawns.tingstable`
-- Artifact convention: `LazySheepChef-vMAJOR.MINOR.PATCH-Bata-variant.apk`
-- Installed display name: `懒羊羊当大厨～`
-- In-app display name: `懒羊羊当大厨～`
+- Artifact convention: `Dawnsdew-Lulu-s-Table-vMAJOR.MINOR.PATCH-Bata-variant.apk`
+- Installed display name: `Dawnsdew Lulu's Table`
+- In-app display name: `Dawnsdew Lulu's Table`
 
 ## Stable Preferences
 
@@ -17,7 +17,18 @@
 - Visual system: Default to a restrained low-saturation palette; support a persistent in-app night skin without relying on system mode.
 - Release: Preserve package identity, local-data compatibility, signing continuity, and all historical GitHub Releases.
 
+## Copy Identity
+
+- This repository is an independently signed named copy of `DawnsTing-Tings-Table`; code behavior, package ID, local data keys, and feature surfaces remain aligned with the source app.
+
 ## Iterations
+
+### 2026-08-09 Dawnsdew-Lulu-s-Table copy
+
+- Changes: Copied the source recipe app into this repository and changed only the repository identity, installed/in-app display name, artifact prefix, prototype title, and source User-Agent label.
+- Decisions and new preferences: Keep the package ID, namespace, local data keys, recipe catalog, navigation, theme behavior, and feature surfaces aligned with the source app. Use an independent release signature for this named copy; do not treat its APK as a cover-install upgrade for the source app.
+- Verification: Source copy started from the latest `main` commit before the rename pass; source files remain otherwise unchanged pending the release build.
+- Commit, tag, and Release: Pending.
 
 ### 2026-08-09 v0.6.5-Bata
 

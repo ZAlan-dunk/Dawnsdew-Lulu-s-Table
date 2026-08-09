@@ -14,10 +14,10 @@
 
 ## Project Boundary
 
-- Resolved project path: `D:\Agent\Githubstorage\DawnsTing-Tings-Table`
+- Resolved project path: `D:\Agent\Githubstorage\Dawnsdew-Lulu-s-Table`
 - Active workspace root: The repository is an explicitly authorized external project for this iteration.
 - External-write approval: The user requested fetching and iterating this exact repository. No neighboring path is authorized.
-- Repository owner/name: `ZAlan-dunk/DawnsTing-Tings-Table` (public)
+- Repository owner/name: `ZAlan-dunk/Dawnsdew-Lulu-s-Table` (public)
 - Branch and upstream: `main` -> `origin/main`
 - Cloud comparison result: Fetched 2026-08-09 with process-local Git HTTP/1.1; local `HEAD` matched `origin/main` before edits.
 
@@ -25,9 +25,9 @@
 
 - Package ID: `com.dawns.tingstable`
 - Namespace: `com.dawns.tingstable`
-- Artifact base name: `LazySheepChef`
-- Installed display name: `懒羊羊当大厨～`
-- In-app display name: `懒羊羊当大厨～`
+- Artifact base name: `Dawnsdew-Lulu-s-Table`
+- Installed display name: `Dawnsdew Lulu's Table`
+- In-app display name: `Dawnsdew Lulu's Table`
 
 ## Experience
 
@@ -71,7 +71,7 @@
 ## Delivery
 
 - Next unused version: `v0.6.5-Bata` / `versionCode 12`
-- Artifact: `LazySheepChef-v0.6.5-Bata-release.apk`
+- Artifact: `Dawnsdew-Lulu-s-Table-v0.6.5-Bata-release.apk`
 - Verification: Unit tests, lint, debug/release assembly, APK metadata, permission and signature checks.
 - Historical releases: Preserve `v0.1-beta` through `v0.6.3-Bata` and all assets unchanged.
 - Development memory: `docs/APP_DEVELOPMENT_MEMORY.md`

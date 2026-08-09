@@ -2,12 +2,12 @@
 
 - Fixed Android system Back navigation so in-app pages return to the previous surface.
 - Added a two-step Home exit flow: first Back shows a hint, second Back opens an exit confirmation.
-- Incremented the Android version to `versionCode 12` / `versionName 0.6.5-Bata` while retaining the continuous release signing certificate.
+- Kept the Android version at `versionCode 12` / `versionName 0.6.5-Bata` and prepared an independent release signature for this named app copy.
 
 ## Functions
 
 - Preserves recipe, pantry, specials, shopping list, and form navigation state while moving backward.
-- Allows the v0.6.5-Bata release APK to upgrade v0.6.4-Bata in place when the release APK is used.
+- Keeps the same recipe, pantry, specials, shopping-list, and navigation behavior as the source app; this independent package is not intended to cover-install the source app.
 
 ## Verification
 

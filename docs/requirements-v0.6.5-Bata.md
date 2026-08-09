@@ -1,10 +1,10 @@
-# 懒羊羊当大厨～ v0.6.5-Bata 返回导航与升级
+# Dawnsdew Lulu's Table v0.6.5-Bata 返回导航与升级
 
 ## 目标
 
 - 修复手机系统返回键在 Android 13+ 及兼容分发路径下直接退出 Activity 的问题。
 - 在保留现有页面层级返回逻辑的基础上，首页连续两次返回才显示退出确认。
-- 版本升级到 `versionCode 12` / `versionName 0.6.5-Bata`，继续使用连续 release 签名，支持覆盖安装 v0.6.4-Bata。
+- 版本保持为 `versionCode 12` / `versionName 0.6.5-Bata`，使用本副本独立的 release 签名；该 APK 不覆盖安装源 app。
 
 ## 行为
 
@@ -16,7 +16,7 @@
 
 ## 升级兼容
 
-- 包名、命名空间、SharedPreferences 数据键和 release 证书保持不变。
+- 包名、命名空间和 SharedPreferences 数据键保持与源 app 一致；本副本使用独立 release 证书。
 - release APK 版本号高于 v0.6.4-Bata；debug APK 仅用于开发验证，不用于覆盖 release 包。
 
 ## 验收
