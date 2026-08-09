@@ -11,4 +11,4 @@
 
 ## Verification
 
-- Back state tests, unit tests, Debug/Release Lint, Debug/Release assembly, APK metadata, signing, and upgrade identity checks are required before publication.
+- GitHub Actions run `31322516706` passed catalog validation, unit tests, Debug/Release Lint, Debug/Release assembly, and release signing verification. The release APK SHA-256 is `1365d11feab1f883f0d77124652a1184d2bb22f9b26412c0681ba9b86b386ff3`; no debug APK was published.
