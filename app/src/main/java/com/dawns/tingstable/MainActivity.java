@@ -263,7 +263,7 @@ public class MainActivity extends Activity {
         backButton.setVisibility(View.GONE);
         topBar.addView(backButton, new LinearLayout.LayoutParams(dp(48), dp(48)));
 
-        titleView = text("懒羊羊当大厨～", 20, INK, true);
+        titleView = text(getString(R.string.app_name), 20, INK, true);
         titleView.setGravity(Gravity.CENTER_VERTICAL);
         titleView.setMaxLines(2);
         ViewCompat.setAccessibilityHeading(titleView, true);
@@ -417,7 +417,7 @@ public class MainActivity extends Activity {
         TextView signature = text("漂亮嘞女明星～", 11, CINNABAR, true);
         signature.setPadding(0, dp(4), 0, 0);
         heroCopy.addView(signature);
-        TextView brand = text("懒羊羊当大厨～", 27, INK, true);
+        TextView brand = text(getString(R.string.app_name), 27, INK, true);
         brand.setPadding(0, dp(8), 0, dp(6));
         heroCopy.addView(brand);
         String kitchenState = available == 0

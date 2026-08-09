@@ -10,7 +10,7 @@
 ## v0.6.5 Navigation Addendum
 
 - Requested outcome: Make the Android system Back action navigate to the previous in-app surface; require two consecutive Back actions on Home before showing an exit confirmation.
-- Upgrade constraint: Keep the continuous release signing certificate and increment the version code so the new release APK can cover-install v0.6.4-Bata.
+- Upgrade constraint: Keep the source app's version code and behavior aligned while using this copy's independent release certificate; the copy APK is not intended to cover-install the source app.
 
 ## Project Boundary
 
@@ -66,7 +66,7 @@
 - Given 200% text scale, when controls reflow, then essential labels are not silently clipped and all actions remain reachable.
 - Given any non-Home surface, when the Android system Back action is invoked, then the previous in-app surface is shown instead of finishing the Activity.
 - Given Home, when Back is invoked once, then an exit hint is shown; when invoked again within the short confirmation window, then an exit confirmation dialog is shown.
-- Given the release APK, when installed over v0.6.4-Bata, then the package, signing certificate, and incremented version code permit an in-place upgrade.
+- Given the release APK, when installed on the friend's device, then the package, version metadata, and independent signing certificate produce a valid named copy without changing the source app's local data.
 
 ## Delivery
 

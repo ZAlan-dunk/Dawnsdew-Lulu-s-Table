@@ -15,7 +15,7 @@
 - Theme and typography: Warm paper, jade, cinnabar, old gold, readable Chinese system typography, and a text-first Android home Hero without character artwork.
 - Motion and performance: Short purposeful motion with an immediate reduced-motion fallback; no continuous decorative animation.
 - Visual system: Default to a restrained low-saturation palette; support a persistent in-app night skin without relying on system mode.
-- Release: Preserve package identity, local-data compatibility, signing continuity, and all historical GitHub Releases.
+- Release: Preserve package identity, local-data compatibility, and all historical GitHub Releases; this named copy keeps its own release certificate.
 
 ## Copy Identity
 

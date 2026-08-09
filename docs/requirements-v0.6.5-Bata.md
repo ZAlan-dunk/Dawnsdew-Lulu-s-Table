@@ -17,7 +17,7 @@
 ## 升级兼容
 
 - 包名、命名空间和 SharedPreferences 数据键保持与源 app 一致；本副本使用独立 release 证书。
-- release APK 版本号高于 v0.6.4-Bata；debug APK 仅用于开发验证，不用于覆盖 release 包。
+- release APK 版本号保持与源 app 的 v0.6.5-Bata 对齐；debug APK 仅用于开发验证，不用于覆盖 release 包。
 
 ## 验收
 
