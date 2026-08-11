@@ -27,8 +27,8 @@
 
 - Changes: Added one-tap private cloud upload, backup preview and confirmed restore for custom recipes, favorites, pantry, shopping list, selected ingredients, and theme; added the isolated `lulu` cloud profile and rollback-on-failure local restoration.
 - Decisions and new preferences: Both repositories display `懒羊羊当大厨~`; Lulu differs only in repository identity, cloud profile, APK filename, and its existing independent signing chain. Cloud credentials remain encrypted repository Secrets and are never committed. Only release APKs are produced and published.
-- Verification: Backup payload unit tests cover round-trip data, profile mismatch, unsupported schema, and deduplication. Full Android CI, signing, APK metadata, and remote backup smoke verification are required before publication.
-- Commit, tag, and Release: Pending.
+- Verification: GitHub Actions run `31455385959` passed the private-repository write probe, backup payload tests (round-trip data, profile mismatch, unsupported schema, and deduplication), catalog validation, Debug/Release Lint, release assembly, APK signing, and package/name/version metadata checks. The release APK uses package `com.dawns.tingstable`, version 13 / `0.6.6-Bata`, certificate SHA-256 `09b7787f996a762bf812d06cec17af591c4e4c5d2a799b1e2f83e8ac49fbc51e`, and APK SHA-256 `1804eafebef65b464b36a4f39ef4a5dbeb09c8c631e74585351591f3a259cc5b`.
+- Commit, tag, and Release: Implementation commit `bc89104` is pushed to `main`; the final verified record commit will be tagged `v0.6.6-Bata` and published as a GitHub Pre-release with only `Dawnsdew-Lulu-s-Table-v0.6.6-Bata-release.apk`.
 
 ### 2026-08-09 Dawnsdew-Lulu-s-Table copy
 
