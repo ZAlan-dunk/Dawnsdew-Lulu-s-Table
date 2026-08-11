@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DawnsdewLuluTable"
+rootProject.name = "TingsTable"
 include ':app'

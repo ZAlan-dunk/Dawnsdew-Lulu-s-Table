@@ -5,27 +5,34 @@
 - Repository: `ZAlan-dunk/Dawnsdew-Lulu-s-Table`
 - Package ID and namespace: `com.dawns.tingstable`
 - Artifact convention: `Dawnsdew-Lulu-s-Table-vMAJOR.MINOR.PATCH-Bata-variant.apk`
-- Installed display name: `Dawnsdew Lulu's Table`
-- In-app display name: `Dawnsdew Lulu's Table`
+- Installed display name: `懒羊羊当大厨~`
+- In-app display name: `懒羊羊当大厨~`
 
 ## Stable Preferences
 
-- Platform and data: Native Android Java, local-first, no account, analytics, or ads; source-linked special collections may use bounded HTTPS image loading while core flows remain offline.
+- Platform and data: Native Android Java, local-first, no account, analytics, or ads; personal data can be explicitly backed up to a private repository while core flows remain offline.
 - UI and UX: Recipe content takes priority over persistent controls; advanced controls use progressive disclosure.
 - Theme and typography: Warm paper, jade, cinnabar, old gold, readable Chinese system typography, and a text-first Android home Hero without character artwork.
 - Motion and performance: Short purposeful motion with an immediate reduced-motion fallback; no continuous decorative animation.
 - Visual system: Default to a restrained low-saturation palette; support a persistent in-app night skin without relying on system mode.
-- Release: Preserve package identity, local-data compatibility, and all historical GitHub Releases; this named copy keeps its own release certificate.
+- Release: Preserve package identity, local-data compatibility, and all historical GitHub Releases; this repository keeps its own release certificate. Do not build, upload, or hand off a debug APK unless explicitly requested.
 
 ## Copy Identity
 
-- This repository is an independently signed named copy of `DawnsTing-Tings-Table`; code behavior, package ID, local data keys, and feature surfaces remain aligned with the source app.
+- This repository is an independently signed distribution copy of `DawnsTing-Tings-Table`; only repository identity, APK filename, cloud backup profile, and signing chain differ. Installed name, in-app name, package ID, local data keys, code behavior, and feature surfaces remain aligned with the source app.
 
 ## Iterations
 
+### 2026-08-11 v0.6.6-Bata
+
+- Changes: Added one-tap private cloud upload, backup preview and confirmed restore for custom recipes, favorites, pantry, shopping list, selected ingredients, and theme; added the isolated `lulu` cloud profile and rollback-on-failure local restoration.
+- Decisions and new preferences: Both repositories display `懒羊羊当大厨~`; Lulu differs only in repository identity, cloud profile, APK filename, and its existing independent signing chain. Cloud credentials remain encrypted repository Secrets and are never committed. Only release APKs are produced and published.
+- Verification: Backup payload unit tests cover round-trip data, profile mismatch, unsupported schema, and deduplication. Full Android CI, signing, APK metadata, and remote backup smoke verification are required before publication.
+- Commit, tag, and Release: Pending.
+
 ### 2026-08-09 Dawnsdew-Lulu-s-Table copy
 
-- Changes: Copied the source recipe app into this repository and changed only the repository identity, installed/in-app display name, artifact prefix, prototype title, and source User-Agent label.
+- Changes: Copied the source recipe app into this repository. The v0.6.6 correction restores the source installed/in-app display name, prototype title, build project name, and source User-Agent; repository identity and APK filename remain distinct.
 - Decisions and new preferences: Keep the package ID, namespace, local data keys, recipe catalog, navigation, theme behavior, and feature surfaces aligned with the source app. Use an independent release signature for this named copy; do not treat its APK as a cover-install upgrade for the source app.
 - Verification: GitHub Actions run `31322516706` passed catalog validation, 36 unit tests, Debug/Release Lint, Debug/Release assembly, and independent release signing. The release APK SHA-256 is `1365d11feab1f883f0d77124652a1184d2bb22f9b26412c0681ba9b86b386ff3`; the remote Release asset matched this hash and no debug asset was published.
 - Commit, tag, and Release: Source commit `674ee96` is pushed to `main`; tag `v0.6.5-Bata` and the GitHub Pre-release are published with `Dawnsdew-Lulu-s-Table-v0.6.5-Bata-release.apk` and `SHA256.txt`.
