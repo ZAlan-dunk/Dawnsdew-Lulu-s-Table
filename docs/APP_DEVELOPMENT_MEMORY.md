@@ -28,8 +28,8 @@
 
 - Changes: Replaced whole-device restore with recipe-only collections; added sequential `Dew-xxxx` allocation, direct GitHub state synchronization, local `KKLLTL` visibility gating, explicit revision conflict handling, cuisine grouping, and local habit sorting.
 - Decisions and new preferences: Existing built-in specials remain separate. Complete collection data may be downloaded before a key is entered; the App hides custom-special metadata and recipes until the packaged key is validated locally. Cloudflare Worker, scoped tokens, recovery codes, and Android Keystore collection credentials are not used.
-- Verification: On 2026-08-12, 54 unit tests, Debug/Release Lint with 0 errors, and Release assembly passed with SDK 36; no debug APK was assembled. The unsigned local APK reports package `com.dawns.tingstable`, version 14 / `0.6.7-Bata`, display name `懒羊羊当大厨~`, minSdk 26, targetSdk 36, and the expected Internet permission. The private cloud state was initialized and read back with `KKLLTL` and no access key. CI signing and published-asset verification remain pending.
-- Commit, tag, and Release: The initial collection implementation is committed locally; the final direct-GitHub follow-up, push, tag, and Release are pending verification.
+- Verification: On 2026-08-12, 54 unit tests, Debug/Release Lint with 0 errors, and Release assembly passed with SDK 36; no debug APK was assembled. GitHub Actions run `31515499580` passed the cloud write probe, release signing, tests, Lint, assembly, and APK metadata checks. The signed APK keeps certificate SHA-256 `09b7787f996a762bf812d06cec17af591c4e4c5d2a799b1e2f83e8ac49fbc51e`; its SHA-256 is `0f6f638610b6a3cdf1d666dc0d1c504fb1d7ee26184e5230b01219926bf779c6`. The private cloud state contains `KKLLTL` without an access key, and the published APK was re-downloaded byte-identically.
+- Commit, tag, and Release: Collection commit `230cc07` and direct-GitHub follow-up `0720b1c` are pushed. Tag `v0.6.7-Bata` points to `0720b1c`; its GitHub Pre-release is published with only `Dawnsdew-Lulu-s-Table-v0.6.7-Bata-release.apk`.
 
 ### 2026-08-11 v0.6.6-Bata
 
