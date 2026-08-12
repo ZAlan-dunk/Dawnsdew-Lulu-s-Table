@@ -30,8 +30,8 @@
 
 - Changes: Added an iPhone/iPad installable PWA with standalone manifest, Apple touch icons, offline app shell, safe-area layout, light/night skins, compact recipe tools, local recipe/pantry/shopping flows, built-in specials, personal collections, optional direct GitHub sync, and JSON recovery.
 - Decisions and new preferences: Keep Android v0.6.7 and this repository's independent signing chain unchanged. Treat the iOS build as a PWA rather than a native app. Use a Lulu-specific browser data namespace and never inject the private repository token into public Pages JavaScript.
-- Verification: Node tests cover sequential collection IDs, UUID preservation, special visibility, habit sorting, import/export, grouping, manifest, service-worker assets, JavaScript parsing, 15 built-ins, and 150 Yunfeng entries. Physical iPhone install and VoiceOver remain user/device checks.
-- Commit, tag, and Release: Pending final Pages deployment and v0.6.8-Bata source archive publication.
+- Verification: Eleven Node tests passed for sequential collection IDs, UUID preservation, special visibility, habit sorting, import/export, grouping, manifest, service-worker assets, JavaScript parsing, 15 built-ins, and 150 Yunfeng entries. GitHub Pages run `31564356854` passed after one-time Pages enablement; the public HTTPS page, manifest, service worker, Lulu profile, 15 built-ins, and 150 Yunfeng entries returned the expected values. Physical iPhone install and VoiceOver remain user/device checks.
+- Commit, tag, and Release: Implementation commit `6fd8e6f` is pushed. Final `v0.6.8-Bata` tag and PWA source archive publication follow this verification record.
 
 ### 2026-08-11 v0.6.7-Bata
 
