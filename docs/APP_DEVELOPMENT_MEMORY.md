@@ -7,6 +7,7 @@
 - Artifact convention: `Dawnsdew-Lulu-s-Table-vMAJOR.MINOR.PATCH-Bata-variant.apk`
 - Installed display name: `懒羊羊当大厨~`
 - In-app display name: `懒羊羊当大厨~`
+- iOS delivery: This repository's GitHub Pages PWA, installed through Safari Add to Home Screen; not a native IPA.
 
 ## Stable Preferences
 
@@ -17,12 +18,20 @@
 - Visual system: Default to a restrained low-saturation palette; support a persistent in-app night skin without relying on system mode.
 - Release: Preserve package identity, local-data compatibility, and all historical GitHub Releases; this repository keeps its own release certificate. Do not build, upload, or hand off a debug APK unless explicitly requested.
 - Cloud access: The release build receives the private GitHub token from the repository Actions Secret. Complete recipe-collection state is cached locally; a packaged key controls only whether a custom special is shown and editable on that device.
+- PWA storage: Use a Lulu-specific local data namespace. Keep the optional GitHub token device-local and out of public Pages assets; provide JSON export/import because iOS can evict browser storage.
 
 ## Copy Identity
 
 - This repository is an independently signed distribution copy of `DawnsTing-Tings-Table`; only repository identity, APK filename, recipe-sync profile, and signing chain differ. Installed name, in-app name, package ID, local data keys, code behavior, and feature surfaces remain aligned with the source app.
 
 ## Iterations
+
+### 2026-08-12 v0.6.8-Bata
+
+- Changes: Added an iPhone/iPad installable PWA with standalone manifest, Apple touch icons, offline app shell, safe-area layout, light/night skins, compact recipe tools, local recipe/pantry/shopping flows, built-in specials, personal collections, optional direct GitHub sync, and JSON recovery.
+- Decisions and new preferences: Keep Android v0.6.7 and this repository's independent signing chain unchanged. Treat the iOS build as a PWA rather than a native app. Use a Lulu-specific browser data namespace and never inject the private repository token into public Pages JavaScript.
+- Verification: Node tests cover sequential collection IDs, UUID preservation, special visibility, habit sorting, import/export, grouping, manifest, service-worker assets, JavaScript parsing, 15 built-ins, and 150 Yunfeng entries. Physical iPhone install and VoiceOver remain user/device checks.
+- Commit, tag, and Release: Pending final Pages deployment and v0.6.8-Bata source archive publication.
 
 ### 2026-08-11 v0.6.7-Bata
 

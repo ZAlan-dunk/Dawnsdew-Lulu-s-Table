@@ -1,5 +1,21 @@
 # 更新记录
 
+## v0.6.8-Bata — 2026-08-12
+
+### iOS PWA
+
+- 新增可由 iPhone/iPad Safari 添加到主屏幕的独立 PWA，不生成 IPA，也不改动 Android APK 身份与历史版本。
+- 迁移首页、菜谱、菜篮、食材匹配、采购清单、特典和个人菜谱集主要流程。
+- 菜谱页继续使用图标触发的搜索、筛选和分类模式，减少固定工具栏占用。
+- 增加浅色/夜间皮肤、iOS 安全区域、浏览历史返回、主屏幕退出确认和减少动态效果支持。
+
+### 数据与发布
+
+- PWA 使用 Lulu 独立的本地数据空间，并提供 JSON 导出/导入。
+- 私有 GitHub 菜谱集同步由当前设备填写令牌；令牌不进入公开 Pages 源码或静态产物。
+- 新增 Web App Manifest、Apple touch icons、Service Worker 离线应用外壳和 GitHub Pages 自动部署。
+- 发布 `v0.6.8-Bata` PWA 源码归档；Android `v0.6.7-Bata` APK 与本仓库独立签名保持不变。
+
 ## v0.6.6-Bata — 2026-08-11
 
 ### 私有云端备份
